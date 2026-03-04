@@ -44,7 +44,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: ascii.live
+  - host: ascii.bond
     http:
       paths:
       - path: /
@@ -57,4 +57,4 @@ spec:
   tls:
     - secretName: ascii-live-tls-prod-cert
       hosts:
-        - ascii.live
+        - ascii.bond
